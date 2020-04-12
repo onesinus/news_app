@@ -9,10 +9,10 @@ const News = ({category, data}) => (
             }
         </h3>
         {
-            data.length < 1 && <div style={{ textAlign: 'center' }}>Getting news...</div>
+            data && data.length < 1 && <div style={{ textAlign: 'center' }}>Getting news...</div>
         }
         {
-            data.length > 0 &&
+            data && data.length > 0 &&
             <Table responsive>
                 <thead>
                     <tr>
