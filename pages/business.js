@@ -1,4 +1,3 @@
-import Header from './layouts/Header';
 import News from './components/News';
 import { useEffect, useState } from 'react';
 
@@ -50,7 +49,6 @@ const Business = () => {
 
     return (
         <>
-            <Header />
             <News 
                 category="Business"
                 data={data}
